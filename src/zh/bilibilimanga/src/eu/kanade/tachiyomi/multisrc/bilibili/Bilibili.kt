@@ -211,10 +211,6 @@ abstract class Bilibili(
             else -> SManga.ONGOING
         }
         description = buildString {
-            if (comic.hasPaidChapters && !signedIn) {
-                append("${intl.hasPaidChaptersWarning(comic.paidChaptersCount)}\n\n")
-            }
-
             append(comic.classicLines)
 
             if (comic.updateWeekdays.isNotEmpty() && status == SManga.ONGOING) {

@@ -30,11 +30,7 @@ class BilibiliManga : Bilibili(
         val data = result.data!!
         val id = data.id
         return data.episodeList.mapNotNull { episode ->
-            if (episode.isInFree || !episode.isLocked) {
-                chapterFromObject(episode, id)
-            } else {
-                null
-            }
+            chapterFromObject(episode, id)
         }
     }
 
