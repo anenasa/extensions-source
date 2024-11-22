@@ -341,8 +341,8 @@ class HotMangas : HttpSource(), ConfigurableSource {
         private const val API_PREFIX = "https://mapi."
         private val DOMAINS = arrayOf("hotmangasg.com", "hotmangasd.com", "hotmangasf.com", "elfgjfghkk.club", "fgjfghkkcenter.club", "fgjfghkk.club")
         private val DOMAIN_INDICES = arrayOf("0", "1", "2", "3", "4", "5")
-        private val WEB_DOMAINS = arrayOf("2024manga.com", "relamanhua.com")
-        private val WEB_DOMAIN_INDICES = arrayOf("0", "1")
+        private val WEB_DOMAINS = arrayOf("2024manga.com", "relamanhua.com", "manga2024.com")
+        private val WEB_DOMAIN_INDICES = arrayOf("0", "1", "2")
         private val QUALITY = arrayOf("800", "1200", "1500")
         private val RATE_ARRAY = (5..60 step 5).map { i -> i.toString() }.toTypedArray()
         private const val DEFAULT_VERSION = "2024.04.28"
